@@ -1,5 +1,4 @@
 FROM ubuntu:16.04
-MAINTAINER Max Gonzih <gonzih at gmail dot com>
 
 RUN apt-get -y update
 RUN apt-get -y upgrade
