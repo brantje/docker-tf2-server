@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:16.04
 MAINTAINER Max Gonzih <gonzih at gmail dot com>
 
 RUN apt-get -y update
@@ -22,7 +22,7 @@ ADD ./update.sh $SERVER/update.sh
 ADD ./tf.sh $SERVER/tf.sh
 RUN $SERVER/update.sh
 
-EXPOSE 27015/udp
+EXPOSE 27015
 
 WORKDIR /home/$USER/hlserver
 ENTRYPOINT ["./tf.sh"]
